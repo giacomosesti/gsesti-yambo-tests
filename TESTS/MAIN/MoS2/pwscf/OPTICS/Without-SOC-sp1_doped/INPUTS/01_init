@@ -13,6 +13,6 @@
 #         MPI+OpenMP+SLK+SLEPC+HDF5_MPI_IO Build                      
 #                http://www.yambo-code.eu                             
 #
-infver                           # [R] Input file variables verbosity
+setup                            # [R] Initialization
 Nelectro= 26.04000               # Electrons number
 ElecTemp= 0.005000         Ry    # Electronic Temperature
