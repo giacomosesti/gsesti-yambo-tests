@@ -1,4 +1,5 @@
 #                                                                     
+#                                                                     
 #  /$$     /$$ /$$$$$$  /$$      /$$ /$$$$$$$   /$$$$$$               
 # |  $$   /$$//$$__  $$| $$$    /$$$| $$__  $$ /$$__  $$              
 #  \  $$ /$$/| $$  \ $$| $$$$  /$$$$| $$  \ $$| $$  \ $$              
@@ -18,9 +19,9 @@ mpa                              # [R][Xm] Multi Pole Approximation for the Scre
 el_el_corr                       # [R] Electron-Electron Correlation
 HF_and_locXC                     # [R] Hartree-Fock
 em1d                             # [R][X] Dynamically Screened Interaction
+#DegFix                        # Force the code to impose the energy levels to respect their degeneracy
 Nelectro= 26.04000               # Electrons number
 ElecTemp= 0.005000         Ry    # Electronic Temperature
-#DegFix                        # Force the code to impose the energy levels to respect their degeneracy
 X_Threads=0                      # [OPENMP/X] Number of threads for response functions
 DIP_Threads=0                    # [OPENMP/X] Number of threads for dipoles
 SE_Threads=0                     # [OPENMP/GW] Number of threads for self-energy
@@ -59,30 +60,3 @@ DysSolver= "n"                   # [GW] Dyson Equation solver ("n","s","g","q")
 %QPkrange                        # [GW] QP generalized Kpoint/Band indices
 1|2|13|14|
 %
-DIP_ROLEs= "k.c.v" 
-X_and_IO_ROLEs= "g.q.k.c.v" 
-X_ROLEs= "g.q.k.c.v" 
-BS_ROLEs= "k.eh.t" 
-SE_ROLEs= "q.qp.b" 
-RT_ROLEs= "q.k.qp.b" 
-NL_ROLEs= "w.k" 
-OSCLL_ROLEs= "k.b" 
- 
-X_nCPU_LinAlg_INV=1 
-X_and_IO_nCPU_LinAlg_INV=1 
-X_q_0_nCPU_LinAlg_INV=1 
-X_finite_q_nCPU_LinAlg_INV=1 
-BS_nCPU_LinAlg_INV=1 
-BS_nCPU_LinAlg_DIAGO=1 
-SE_nCPU_LinAlg_DIAGO=1 
- 
-K_Threads= 1 
-X_Threads= 1 
-DIP_Threads= 1 
-SE_Threads= 1 
-RT_Threads= 1 
-NL_Threads= 1 
-SE_CPU="1.2.2" 
-X_CPU="2.1.2.1.1" 
-X_and_IO_CPU="2.1.2.1.1" 
-DIP_CPU="1.4.1" 
