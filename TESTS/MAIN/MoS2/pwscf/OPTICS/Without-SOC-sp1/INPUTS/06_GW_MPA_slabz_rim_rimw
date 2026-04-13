@@ -22,16 +22,6 @@ rim_cut                          # [R] Coulomb potential
 rim_w                            # [R] Screened coulomb potential
 em1d                             # [R][X] Dynamically Screened Interaction
 #DegFix                        # Force the code to impose the energy levels to respect their degeneracy
-X_and_IO_CPU= "2.1.2.1.1"        # [PARALLEL] CPUs for each role
-X_and_IO_ROLEs= "g.q.k.c.v"      # [PARALLEL] CPUs roles (q,g,k,c,v)
-X_and_IO_nCPU_LinAlg_INV= 1      # [PARALLEL] CPUs for Linear Algebra (if -1 it is automatically set)
-X_Threads= 1                     # [OPENMP/X] Number of threads for response functions
-DIP_CPU= "1.4.1"                 # [PARALLEL] CPUs for each role
-DIP_ROLEs= "k.c.v"               # [PARALLEL] CPUs roles (k,c,v)
-DIP_Threads= 1                   # [OPENMP/X] Number of threads for dipoles
-SE_CPU= "1.2.2"                  # [PARALLEL] CPUs for each role
-SE_ROLEs= "q.qp.b"               # [PARALLEL] CPUs roles (q,g,qp,b)
-SE_Threads= 1                    # [OPENMP/GW] Number of threads for self-energy
 RandQpts=2000000               # [RIM] Number of random q-points in the BZ
 RandGvec= 3            RL      # [RIM] Coulomb interaction RS components
 RandGvecW= 3           RL
