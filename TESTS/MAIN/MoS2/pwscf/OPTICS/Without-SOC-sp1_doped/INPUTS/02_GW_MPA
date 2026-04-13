@@ -23,9 +23,6 @@ em1d                             # [R][X] Dynamically Screened Interaction
 #DegFix                        # Force the code to impose the energy levels to respect their degeneracy
 Nelectro= 26.04000               # Electrons number
 ElecTemp= 0.005000         Ry    # Electronic Temperature
-X_Threads=0                      # [OPENMP/X] Number of threads for response functions
-DIP_Threads=0                    # [OPENMP/X] Number of threads for dipoles
-SE_Threads=0                     # [OPENMP/GW] Number of threads for self-energy
 EXXRLvcs=  56613           RL    # [XX] Exchange    RL components
 VXCRLvcs=  56613           RL    # [XC] XCpotential RL components
 Chimod= "HARTREE"                # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
